@@ -1,9 +1,10 @@
 package tp02.ejercicio3;
-import tp02.ejercicio2.*;
+import tp02.ejercicio2.ListaEnlazadaGenerica;
+import tp02.ejercicio2.ListaGenerica;
 
 public class ColaGenerica <T>{
-	private ListaGenerica<T> lista = new ListaEnlazadaGenerica<T>();
-	
+	private ListaGenerica<T> lista = new ListaEnlazadaGenerica<>();
+
 	public void encolar(T elem) {
 		lista.agregarFinal(elem);
 	}

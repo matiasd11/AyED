@@ -230,16 +230,5 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		}
 		return true;
 	}
-	public boolean agregar(T[] elem) {
-		boolean ok = true;
-		boolean actual = false;
-		for(int i = 0; i <= elem.length; i++) {
-			actual = this.agregarFinal(elem[i]);
-			if(!actual) {
-				ok = false;
-			}
-		}
-		return ok;
-	}
 
 }

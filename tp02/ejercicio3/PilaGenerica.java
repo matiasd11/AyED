@@ -1,8 +1,9 @@
 package tp02.ejercicio3;
-import tp02.ejercicio2.*;
+import tp02.ejercicio2.ListaEnlazadaGenerica;
+import tp02.ejercicio2.ListaGenerica;
 public class PilaGenerica<T>{
-private ListaGenerica<T> lista = new ListaEnlazadaGenerica<T>();
-	
+private ListaGenerica<T> lista = new ListaEnlazadaGenerica<>();
+
 	public void apilar(T elem) {
 		lista.agregarInicio(elem);
 	}
